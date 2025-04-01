@@ -1,0 +1,115 @@
+.plant__container {
+    
+    position: relative;
+    height: 100vh;
+    background: url(../../../images/plants/backgroundplants.jpg) center center no-repeat;
+    background-size: cover;
+    
+   
+  }
+  .plant__container__background {
+    content: "";
+    background-color: rgba(54, 53, 53, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+ 
+ .big__title{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-family : "Satisfy", sans-serif;
+    
+  }
+  
+
+
+
+
+ .slide__plant__content{
+    width:320px;
+    height: 100%;
+    overflow: hidden;
+    position : relative;
+  }
+  
+  .plant-img {
+      width: 320px;
+      height: 100% ;
+      object-fit: cover;
+      
+  }
+  .swiper_plants {
+    margin-top: 50px;
+  }
+  
+  .slide__plant__content:hover .slide-plant-body{
+       right: 0;
+  }
+  
+  .slide-plant-body {
+    width: 100%;
+    height: 500px;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+  }
+  
+ 
+  
+  .plant-name {
+    top : 0 ;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    color: #fc8c15;
+    margin-bottom: 2px;
+  }
+  
+  .plant-info {
+      font-size: 20px;
+      line-height: 25px;
+      margin : 40px 0 ;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      margin-bottom: 15px;
+  }
+  
+ .swiper__plant__slide{
+    width: 300px;
+    height: 500px;
+ }
+
+ @media (max-width: 576px) { 
+  .plant__container {
+    height: 100vh;
+}
+  .swiper_plants {
+    width:80%;
+    height :80%
+  }
+
+
+}
+  
+  
+  
+  
+
+  
+  

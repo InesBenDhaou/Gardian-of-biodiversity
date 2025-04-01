@@ -1,0 +1,156 @@
+.previous__container {
+    
+    position: relative;
+    height: 100vh;
+    background-color : white ;
+    background-size: cover;
+    
+   
+  }
+  .previous__container__background {
+    content: "";
+    background-color: rgba(220, 218, 218, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+.SwiperPreviousBenificier {
+    margin-top: 50px ;
+    width: 1400px;
+    height: 500px;
+ }
+.previous__benificier__description {
+    color: rgb(71, 71, 71);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold ;
+
+}
+
+ .slide__PreviousBenificier__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position : relative;
+  }
+  
+ 
+
+
+
+.previous__benificier__card {
+    width: 50%;
+    height: 400px;
+    overflow: visible;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .previous__benificier__card::before {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #00000022;
+    transition: transform 300ms, box-shadow 200ms;
+  }
+  
+  .previous__benificier__card::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ee9933;
+    transform: rotateZ(5deg);
+  }
+  
+  .previous__benificier__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .previous__benificier__info {
+    width: 50%;
+    padding-right: 5rem;
+  }
+
+  .previous__benificier__info h5 {
+    color : white ;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  .duration {
+    color : white ;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+  }
+  
+
+  .previous__benificier__name {
+    font-size: 2.5rem;
+    margin : 1.5rem 0 1rem;
+    text-transform: uppercase;
+    font-family: "Satisfy", sans-serif;
+    color: #ef7213;
+  }
+  
+  
+  
+  
+  .previous__benificier__card:hover::before, .previous__benificier__card:hover  {
+    transform: rotateZ(0deg);
+  }
+  
+  .previous__benificier__card:active::before, .previous__benificier__card:active  {
+    box-shadow: none;
+  }
+
+  @media (max-width: 576px) {
+    .previous__container {
+      height: auto;
+      padding-top: 80px; /* Adjust as needed */
+    }
+  
+    .previous__container__background {
+      background-color: rgba(220, 218, 218, 0.8);
+    }
+  
+    .SwiperPreviousBenificier {
+      width: auto;
+      height: auto;
+      margin-top: 20px; /* Adjust as needed */
+    }
+  
+    .slide__PreviousBenificier__content {
+      flex-direction: column; /* Stack items vertically */
+      padding: 1rem;
+    }
+  
+    .previous__benificier__info,
+    .previous__benificier__card {
+      width: 100%; /* Take full width */
+      
+    }
+  
+    .previous__benificier__info h1 {
+      font-size: 1.5rem; /* Adjust as needed */
+    }
+  
+    .duration {
+      font-size: 1rem; /* Adjust as needed */
+      padding-bottom: 1rem; /* Adjust as needed */
+    }
+  
+    .previous__benificier__name {
+      font-size: 1.5rem; /* Adjust as needed */
+      margin-bottom: 1rem; /* Adjust as needed */
+    }
+  
+    .previous__benificier__description {
+      font-size: 1rem; /* Adjust as needed */
+    }
+  }

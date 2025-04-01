@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        .partenaires_entreprise_intro{
+            font-size: 18px;
+            color: rgb(48, 47, 47);
+            padding-top: 0px;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+        .container-partenaire-entreprise {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container-partenaire-entreprise {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+           
+        }
+        .container-partenaire-entreprise {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px 50px;
+            padding: 100px 50px;
+        }
+        .custom-card-partenaire-entreprise{
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 350px;
+            max-width: 100%;
+            height: 300px;
+            background: #FFF;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise:hover {
+            height: 600px;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .img-box-partenaire-entreprise {
+            position: absolute;
+            top: 20px;
+            width: 300px;
+            height: 220px;
+            
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .custom-card-partenaire-entreprise:hover{
+            margin-top: 80px;
+            
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise:hover .img-box-partenaire-entreprise {
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .img-box-partenaire-entreprise img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /*object-fit: cover;*/
+            
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise {
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            height: 35px;
+            padding: 0 30px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise:hover .custom-content-partenaire-entreprise {
+            top: 130px;
+            height: 600px;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333333;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise p {
+            color: #333;
+            
+        }
+        
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            background: #181818;
+            color: #fff;
+            font-weight: 500;
+        }
+        .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise a:hover {
+            opacity: 0.8;
+        }
+        .partenaire-entreprise-img{
+            background-color: #FFF;
+            width: 100%;
+            height: 100%;
+            position: fixed center center ;
+        }
+        @media (max-width: 480px) {
+            .container-partenaire-entreprise .custom-card-partenaire-entreprise {
+                width: 230px;
+                border-radius: 15px;
+            }
+            .container-partenaire-entreprise .custom-card-partenaire-entreprise .img-box-partenaire-entreprise {
+                width: 185px;
+                border-radius: 10px;
+            }
+            .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise p {
+                font-size: 0.8rem;
+            }
+            .container-partenaire-entreprise .custom-card-partenaire-entreprise .custom-content-partenaire-entreprise a {
+                font-size: 0.9rem;
+            }
+        }

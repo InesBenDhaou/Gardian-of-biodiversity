@@ -1,0 +1,30 @@
+
+.partneaires_type{
+    align-content: center;
+    color: #ff7200;
+}
+.partenaires_intro{
+    font-size: 18px;
+    color: rgb(48, 47, 47);
+    
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.partenaires_pulic_items {
+  
+  text-align: center;
+  
+}
+
+
+.image_wrapper {
+  margin: 0px 30px;
+}
+.image_wrapper:hover{
+  transform: translateY(25px);
+}
+
+.image_wrapper img {
+  width: 80%;
+}

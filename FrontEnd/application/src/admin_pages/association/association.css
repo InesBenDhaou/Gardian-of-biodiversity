@@ -1,0 +1,413 @@
+#textblock {
+  background-color: #210002;
+  height: 100vh;
+}
+
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-title {
+  color: #ffaf1b;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+}
+
+#textblock-content {
+  color: #ffaf1b;
+  font-size: 20px;
+}
+
+#textblock-footer {
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 400;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+#textblock-devsense {
+  text-decoration: none;
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.animation, .animation_layer {
+  height: 1000px;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation_layer {
+  /*background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;*/
+
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.animation_layer.parallax {
+  /*position: fixed;*/
+  position: absolute
+}
+
+#background-gradient {
+  background-image: url(../../images/parallax/background.png);
+}
+
+#sun {
+  background-image: url(../../images/parallax/sun.svg);
+}
+
+#birds {
+  background-image: url(../../images/parallax/birds.png);
+}
+
+#last-trees {
+  background-image: url("../../images/parallax/last tree and mountain.svg");
+}
+
+#middle-trees {
+  background-image: url("../../images/parallax/Middle tree and mountain.svg");
+}
+
+#middle-mountain {
+  background-image: url("../../images/parallax/middle mountain.svg");
+}
+
+#forground-trees {
+  background-image: url("../../images/parallax/foreground tree and mountain.svg");
+}
+
+.homepage__section1 {
+  width: 100%;
+  min-height: 100vh;
+  
+  background-size: cover;
+  /*filter: blur(4px) brightness(50%);*/
+  /*background: linear-gradient(180deg, #63AD9C, #E6EEE0);*/
+  position: relative;
+}
+.login {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ 
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  position: relative;
+}
+.association_selectSection {
+
+  display: flex;
+  margin-top: 150px;
+  /*flex-direction: column;*/
+  justify-content: center;
+  height: 230px; /*100vh;*/
+  position: sticky;    
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.association_selectSection .association_selectSection__image {
+  /*width: 128px;
+  height: 128px;
+  */
+  width: 100px;
+  height: 100px;
+  
+}
+
+.association_selectSection .association_selectSection__image--governance {
+ background-image: url('../../images/parallax/protection.svg');
+}
+
+.association_selectSection .association_selectSection__image--charity {
+  background-image: url('../../images/parallax/charity.svg');
+ }
+
+ .association_selectSection .association_selectSection__image--equipe {
+  background-image: url('../../images/association/equipe.svg');
+ }
+ 
+ .association_selectSection .association_selectSection__image--plan {
+   background-image: url('../../images/association/planStrat.svg');
+  }
+  .association_selectSection .association_selectSection__image--historique{
+    background-image: url('../../images/association/historique.svg');
+   }
+
+.association_selectSection .association_selectSection__image:hover {
+  padding: 30px;
+  background-size: 50px;
+  background-color: #0ea8d7;
+  border-radius: 15px;
+  transition: all 0.5s ease-out;
+}
+
+.association_selectSection__itemContainer {
+  text-align: center;
+}
+
+.association_selectSection .association_selectSection__background {
+  background: url("../../images/parallax/gray-backgound.jpg");
+  background-position: 230px 83px;
+  opacity: 0.65;
+}
+
+.association__header {
+  /*position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;*/
+  padding-top: 50px;
+  z-index: 55;
+  color: white;
+  text-align: center;
+}
+
+.association__user {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.user_button {
+border: 1px solid gray;
+background-color: transparent;
+color: white;
+padding: 8px 16px;
+margin-left: 10px;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.user_button:hover {
+  color: #df6622;
+}
+
+
+.titleAssociation{
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+  /*flex-direction: column;*/
+  justify-content: center;
+  height: 20px; /*100vh;*/
+  background: transparent;
+  
+  
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+
+  width: 100%;
+  background: transparent;
+  background-size: cover;
+  position: relative;
+  align-items: right;
+  justify-content: right;
+
+}
+.slogan{
+position: relative;
+
+
+font-family: "Satisfy", sans-serif;
+font-size: 20px;
+color: white;
+font-weight: 700;
+padding: 0 40px;
+margin-left: 600px;
+&::before {
+content: "\201C";
+position: absolute;
+font-weight: bold;
+font-size: 2em;
+color:  #ff7200;
+top: -10px;
+left: 10px;
+font-family: Georgia, Times, serif;
+}
+&::after {
+content: "\201D";
+position: absolute;
+font-weight: bold;
+font-size: 2em;
+color: #ff7200;
+bottom: -30px;
+right: 10px;
+font-family: Georgia, Times, serif;
+}
+}
+.hero-container {
+  
+  bottom: 0;
+  top: 10;
+  left: 30;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-direction: column;
+  text-align: right;
+  
+}
+
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
+
+/**** end hero ***/
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding-bottom: 30px;
+}
+
+.counts .count-box {
+  padding: 30px;
+  width: 100%;
+}
+
+.counts .count-box i {
+  display: block;
+  font-size: 44px;
+  color: #df6622;
+  float: left;
+  line-height: 0;
+}
+
+.counts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #343434;
+  margin-left: 60px;
+}
+
+.counts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+ 
+}
+
+.counts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+ 
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+/*** end count ***/
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+background: linear-gradient(rgba(137, 181, 202, 0.8), rgba(69, 73, 75, 0.8)), url("../../images/association/background_Historique_section.jpg") fixed center center;
+background-size: cover;
+padding: 60px 0;
+margin-top: 10px;
+height: 400px;
+}
+
+.cta h3 {
+color: #fff;
+font-size: 35px;
+font-weight: 700;
+}
+
+.cta p {
+color: #fff;
+font-size: 18px;
+}
+@media (max-width: 576px) {
+  .View {
+    width: 100%;
+    background-size: 100%; /* Adjust background size to contain the image */
+    background-position: cover;
+    height: 30vh; /* Center the background image */
+    min-height: auto; /* Remove minimum height */
+}
+.association_selectSection {
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  height: 50px;    
+  top: 0;
+  z-index: 100;
+}
+.association_selectSection .association_selectSection__image {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.slogan{
+  font-size: 5px;
+  font-weight: normal;
+  padding: 0px;
+  top: 10px;
+  left: 0px;
+  margin-bottom:0px ;
+  font-family: Georgia, Times, serif;
+  }
+
+}

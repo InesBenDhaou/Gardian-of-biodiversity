@@ -1,0 +1,60 @@
+
+
+
+.partenaires_section{
+   
+    background: url("../../images/partenaires/background_partenaire_section.jpg")fixed center center ;
+  
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 60px 0;
+    margin-top: 10px;
+    height: 350px;
+    text-align: right;
+  }
+  #partenaires_section_h1{
+    padding-top: 50px;
+    padding-left: 60px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: start;
+  }
+  #partenaires_section_h2{
+    position: relative;
+    padding: 0 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: end;
+    font-family: cursive;
+    &::before {
+      content: "\201C";
+      position: absolute;
+      font-weight: bold;
+      font-size: 2em;
+      color:  #ff7200;
+      top: -10px;
+      left: 750px;
+      font-family: Georgia, Times, serif;
+    }
+    &::after {
+      content: "\201D";
+      position: absolute;
+      font-weight: bold;
+      font-size: 2em;
+      color: #ff7200;
+      bottom: -30px;
+      right: 10px;
+      font-family: Georgia, Times, serif;
+    }
+  }
+
+  .intro_partenaires{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.partenaires_selectSection__itemContainer{
+  text-align: center;
+}

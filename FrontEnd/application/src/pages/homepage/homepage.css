@@ -1,0 +1,358 @@
+
+.homepage__section {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../../images/homepage.jpg") no-repeat;
+    background-size: cover;
+    
+}
+
+
+.homepage__selectSection {
+    display: flex;
+    margin-top: 150px;
+    /*flex-direction: column;*/
+    justify-content: center;
+    height: 230px; /*100vh;*/
+    position: sticky;    
+    top: 0;
+    z-index: 100;
+}
+
+.homepage__selectSection .homepage_selectSection__image {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    padding: 30px;
+}
+
+.homepage_selectSection__image--charity{
+  background-image: url('../../images/parallax/charity.svg');
+ }
+ .homepage_selectSection__image--decouverte{
+  background-image: url('../../images/parallax/protection.svg');
+ }
+ .homepage_selectSection__image--partenaire{
+  background-image: url('../../images/parallax/partners.svg');
+ }
+ .homepage_selectSection__image--benfi{
+  background-image: url('../../images/parallax/beneficiary.svg');
+ }
+
+ .homepage_selectSection__image--projet{
+  background-image: url('../../images/parallax/projects.svg');
+ }
+
+
+.homepage__selectSection .homepage_selectSection__image:hover {
+    padding: 30px;
+    background-color: #0ea8d7;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.homepage_selectSection_itemContainer {
+    text-align: center;
+}
+
+.homepage__selectSection .homepage_selectSection__background {
+    background: url("../../images/parallax/gray-backgound.jpg");
+    background-position: 230px 83px;
+    opacity: 0.65;
+}
+.homepage__header__subtitle ,.homepage__header__title  {
+    font-family: "Satisfy", sans-serif;
+}
+
+.homepage__header {
+    padding-top: 50px;
+    z-index: 55;
+    color: white;
+    text-align: center;
+}
+
+.homepage__user {
+    display: flex;
+    justify-content:space-between ;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.homepage__user > * {
+    margin-right: 10px; 
+}
+
+
+
+
+.section__title {
+    font-family: "Satisfy", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+
+
+.user_button_signup , .user_button_login , .user_button_logout{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .svgIcon {
+    width: 25px;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .user_button_signup:hover  {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(248, 116, 50);
+    align-items: center;
+  }
+  
+  .user_button_login:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(248, 116, 50);
+    align-items: center;
+  } 
+  
+  .user_button_logout:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(248, 116, 50);
+    align-items: center;
+  }
+
+  .user_button_signup:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+
+  .user_button_login:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+
+  .user_button_logout:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+  
+  .user_button_signup::before {
+    position: absolute;
+    top: -20px;
+    font-family: "Satisfy", sans-serif;
+    content: "Sign up";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+
+  .user_button_login::before {
+    position: absolute;
+    top: -20px;
+    content: "Log In";
+    font-family: "Satisfy", sans-serif;
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+
+  .user_button_logout::before {
+    position: absolute;
+    top: -20px;
+    content: "Log Out";
+    font-family: "Satisfy", sans-serif;
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+
+  .user_button_logout:hover::before   {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
+  
+  .user_button_login:hover::before   {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
+
+  .user_button_signup:hover::before  {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
+
+  @media (max-width: 576px) { 
+    .homepage__section {
+      width: 100%;
+      background-size: 100%; /* Adjust background size to contain the image */
+      background-position: cover;
+      height: 30vh; /* Center the background image */
+      min-height: auto; /* Remove minimum height */
+  }
+  .homepage__selectSection {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 50px; 
+    position: sticky;    
+    top: 0;
+    z-index: 100;
+}
+  .homepage__selectSection .homepage_selectSection__image {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-size: 28px !important;
+    padding: 20px;
+  }
+  .section__title {
+    font-size: 10px;
+  }
+  .homepage__header__subtitle ,.homepage__header__title  {
+    font-size: 10px;
+}
+  .homepage__header {
+    text-align: center;
+    z-index: 55;
+  }
+   
+  .homepage__header__subtitle {
+    position:absolute;
+    top: 9px;
+    left: 45%;
+  }
+  .homepage__header__title{
+    position: absolute;
+    top: 30px;
+    left: 35%;
+  }
+
+  .svgIcon {
+    width: 15px;
+    transition-duration: .3s;
+  }
+
+  .user_button_signup , .user_button_login , .user_button_logout{
+      width: 30px;
+      height: 30px;
+      
+    }
+
+    .user_button_signup:hover  {
+      width: 50px;
+    }
+    
+    .user_button_login:hover {
+      width: 50px;
+    } 
+    
+    .user_button_logout:hover {
+      width: 50px;
+    }
+  
+    .user_button_signup:hover .svgIcon {
+      width: 30px;
+    }
+  
+    .user_button_login:hover .svgIcon {
+      width: 30px;
+    }
+  
+    .user_button_logout:hover .svgIcon {
+      width: 30px;
+    }
+    
+    .user_button_signup::before {
+      position: absolute;
+      top: -30px;
+      font-family: "Satisfy", sans-serif;
+      content: "Sign up";
+      color: white;
+      transition-duration: .3s;
+      font-size: 2px;
+    }
+  
+    .user_button_login::before {
+      position: absolute;
+      top: -30px;
+      content: "Log In";
+      font-family: "Satisfy", sans-serif;
+      color: white;
+      transition-duration: .3s;
+      font-size: 2px;
+    }
+  
+    .user_button_logout::before {
+      position: absolute;
+      top: -30px;
+      content: "Log Out";
+      font-family: "Satisfy", sans-serif;
+      color: white;
+      transition-duration: .3s;
+      font-size: 2px;
+    }
+  
+    .user_button_logout:hover::before   {
+      font-size: 13px;
+      opacity: 1;
+      transform: translateY(30px);
+      transition-duration: .3s;
+    }
+    
+    .user_button_login:hover::before   {
+      font-size: 13px;
+      opacity: 1;
+      transform: translateY(30px);
+      transition-duration: .3s;
+    }
+  
+    .user_button_signup:hover::before  {
+      font-size: 13px;
+      opacity: 1;
+      transform: translateY(30px);
+      transition-duration: .3s;
+    }
+    
+
+ 
+ 
+  
+
+
+
+  }

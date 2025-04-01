@@ -1,0 +1,169 @@
+.container_current_benificier {
+
+    background: url(../../../images/benificier/partners.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_current_benificier__background {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+
+
+.SwiperBenificier {
+    width: 2000px;
+    height: fit-content;
+    right: 8%;
+}
+
+.benificier_description {
+    width: 79%;
+    height: 20%;
+    padding: 2.5rem;
+    box-shadow: 0;
+    box-shadow: 0 1.4rem 8rem rgba (0 ,0,0,0.2);
+    display: flex;
+    margin-left: 250px;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    border: 4px solid #ef7213;
+    border-radius: .8rem;
+    position: relative;
+    
+}
+
+
+
+.benificier_img {
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+    
+}
+
+.benificier_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.benificier_img img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgb(0, 0, 0, 0.5);
+}
+.benificier_name {
+    font-size: 2.5rem;
+    margin : 1.5rem 0 1rem;
+    text-transform: uppercase;
+    font-family: "Satisfy", sans-serif;
+    color: #ef7213;
+}
+
+.benificier_infos h5{
+    color : #bbb ;
+    font-style: italic;
+}
+.benificier_date {
+    display: block;
+    color : #bbb ;
+    margin-bottom : 20px;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 600;
+  
+}
+
+.benificier_about {
+    margin-bottom: 3rem;
+    font-size: 15px;
+    color : white ;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1068px) {
+    .benificier{
+        max-width: 80rem;
+    }
+    .benificier_img {
+        max-width: 30rem;
+        min-width: 30rem;
+    }
+}
+
+@media screen and (max-width:868px) {
+    .benificier{
+        max-width: 70rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container_current_benificier {
+      height: 100vh;
+      padding-top: 80px; /* Adjust as needed */
+    }
+  
+    .benificier_description {
+      width: 100%;
+      padding: 1rem;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .SwiperBenificier {
+        right: 0px;
+    }
+  
+    .benificier_img {
+      width: 20px;
+      height: 150px;
+      transform: none;
+    }
+    .benificier_img img {
+        width: 65%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: .8rem;
+    }
+  
+    .benificier_name {
+      font-size: 1.5rem; /* Adjust as needed */
+    }
+  
+    .benificier_infos h5 {
+      font-size: 0.8rem; /* Adjust as needed */
+    }
+  
+    .benificier_date {
+      font-size: 0.8rem; /* Adjust as needed */
+      margin-bottom: 10px; /* Adjust as needed */
+    }
+  
+    .benificier_about {
+      font-size: 0.8rem; /* Adjust as needed */
+      margin-bottom: 1rem; /* Adjust as needed */
+    }
+   
+  }

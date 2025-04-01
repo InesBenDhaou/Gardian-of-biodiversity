@@ -1,0 +1,73 @@
+.strategie {
+  background: url("../../images/association/background_strategie_section2.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+  margin-top: 10px;
+  height: 400px;
+  align-items: right;
+}
+
+.strategie h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Satisfy", sans-serif;
+}
+
+
+.strategy-box {
+  min-height: 350px;
+  padding: 30px;
+  width: 100%;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px #df6622;
+  
+}
+
+
+.strategy-box i {
+  display: block;
+  font-size: 44px;
+  color: #df6622;
+  float: left;
+  line-height: 0;
+}
+
+.strategy-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  color: #343434;
+  margin-left: 60px;
+}
+
+.strategy-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+ 
+}
+
+.strategy-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+ 
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+.custom-svg-icon {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 30px; /* Adjust the margin as needed for spacing */
+ 
+}
+
+

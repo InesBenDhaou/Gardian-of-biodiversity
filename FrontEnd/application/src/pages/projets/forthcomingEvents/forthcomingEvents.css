@@ -1,0 +1,100 @@
+    .date_formation{
+        color: rgb(66, 66, 66);
+        font-size: small;
+      
+ 
+    }
+    .title_formation{
+        font-family:optima, sans-serif;
+    }
+
+    .formations-container {
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4rem 2rem;
+      width: 100%;
+      min-height: 300px; /* Adjust the minimum height based on your design */
+      background: url(''); /* Adjust the path accordingly */
+      background-size: cover;
+      background-repeat: repeat;
+    }
+  
+  .formation-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    color: var(--text-gray);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .formation-card:hover {
+    transform: translateY(-2rem);
+  }
+
+
+  .button_joinUs {
+    border-color: #df6622;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .button_joinUs:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #df6622;
+    border-color: #df6622;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  
+  .button_joinUs:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #c4491d; /* Darken color manually if needed */
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  
+  .button_joinUs:hover {
+    color: #fff;
+    border-color: #df6622;
+  }
+  
+  .button_joinUs:hover:before {
+    width: 100%;
+  }
+  
+  
+
+  
+
+  
+  
+ 
+ 

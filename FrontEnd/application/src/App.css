@@ -1,0 +1,11 @@
+.main {
+  overflow-y: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.swiper-horizontal { 
+  max-width: 80%;
+}

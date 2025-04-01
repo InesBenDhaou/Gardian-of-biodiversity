@@ -1,0 +1,117 @@
+.View__benif {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../../images/homepage.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+  }
+
+  .homepage_selectSection {
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+    height: 230px; 
+}
+
+.homepage_selectSection .homepage_selectSection__image {
+    width: 128px;
+    fill: rgb(0, 0, 0);
+    height: 128px;
+    cursor: pointer;
+}
+
+.homepage_selectSection .homepage_selectSection__image:hover {
+    padding: 30px;
+    background-color: #0ea8d7;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.benificiers_selectSection__itemContainer{
+    text-align: center;
+}
+
+.homepage_selectSection .homepage_selectSection__background {
+    background: url("../../images/parallax/gray-backgound.jpg");
+    background-position: 230px 83px;
+    opacity: 0.65;
+}
+
+.homepage__header {
+    padding-top: 50px;
+    z-index: 55;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.slogon {
+	position: relative;
+    margin-top: -100px;
+    font-family: "Satisfy", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+	padding: 0 40px;
+	&::before {
+		content: "\201C";
+		position: absolute;
+		font-weight: bold;
+		font-size: 2em;
+		color:  #ff7200;
+		top: -10px;
+		left: 10px;
+		font-family: Georgia, Times, serif;
+	}
+	&::after {
+		content: "\201D";
+		position: absolute;
+		font-weight: bold;
+		font-size: 2em;
+		color: #ff7200;
+		bottom: -30px;
+		right: 10px;
+		font-family: Georgia, Times, serif;
+	}
+}
+
+.section__title {
+    font-family: "Satisfy", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+@media (max-width: 576px) {
+    .View__benif {
+      width: 100%;
+      background-size: 100%; /* Adjust background size to contain the image */
+      background-position: cover;
+      height: 30vh; /* Center the background image */
+      min-height: auto; /* Remove minimum height */
+  }
+  .homepage_selectSection {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 50px;   
+    top: 0;
+    z-index: 100;
+  }
+  .homepage_selectSection .homepage_selectSection__image {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+  
+  
+  
+  }

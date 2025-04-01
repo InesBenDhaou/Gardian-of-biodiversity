@@ -1,0 +1,93 @@
+
+
+
+
+  .advices__container {
+    
+    position: relative;
+    height: 100vh;
+    background: url(../../../images/leafs.gif) center center no-repeat;
+    background-size: cover;
+    background-position: left ;
+    
+   
+  }
+  .advices__container__background {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+.mySwiper {
+    margin-top: 30px;
+    width:400px;
+    height: 600px;
+}
+
+.advice__slide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color:  beige ; 
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid rgb(246, 172, 34);
+
+}
+
+
+.contentContainer {
+   
+    backdrop-filter: blur(9px);
+    border: 3px solid rgba(127, 125, 125, 0.2);
+    border-radius: 15px;
+    height: 190px;
+    width:80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    background-color: rgb(246, 172, 34);
+    color: white;
+}
+
+.contentContainer:hover {
+  background-color: rgb(246, 172, 34);
+  color: white;
+}
+.content_advice {
+    margin-top: 5px;
+    font-family: "Satisfy", sans-serif ;
+    text-align: center;
+   
+}
+
+
+.advice__bavkground {
+  width: 100%;
+  height: 50%;
+  bottom: 10%;
+  margin-bottom: 5%;
+  
+  
+}
+@media (max-width: 576px) { 
+  .advices__container {
+    height: 100vh; /* Center the background image */
+  }
+  .mySwiper {
+    width: 80%;
+    height: 70%;
+  }
+  .content_advice {
+    font-weight: normal;
+    font-size: small;
+  }
+
+}

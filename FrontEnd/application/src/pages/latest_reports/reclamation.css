@@ -1,0 +1,126 @@
+.reports_container{
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px ;
+   
+}
+
+.section_reports_title {
+    text-align: center;
+    color: black;
+    font-family : "Satisfy", sans-serif;
+    margin-top: 50px;
+    padding-top: 150px;
+}
+.swiper_reports_container{
+    width: 800PX;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.slide-description {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.swiper-scrollbar-drag{
+    background-color: #f1a117; /* Change to your desired color */
+  }
+
+
+.quote-icon {
+    flex: 2;
+    margin-top: -60px;
+    width: 40px;
+    background-color: rgb(125, 122, 122);
+}
+.slide-image {
+    
+    vertical-align: top; 
+    width: 350PX;
+    margin-left: 30px;
+    height: 300px;
+}
+
+.opinion{
+    
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color : #727375;
+    font-family: "Playfair Display", serif;
+    line-height: 1.1em;
+    padding-left: 15px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.author {
+    
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color : #f1a117;
+    line-height: 1.1em;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom:0px;
+    font-family : "Satisfy", sans-serif;
+    
+}
+
+.slide-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+@media (max-width: 576px) { 
+    .reports_container{
+        margin-top: 3px;
+        height: 100vh;
+    }
+    .swiper_reports_container {
+       margin-top: 5px;
+
+    }
+    .slide-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    }
+    .swiper_reports_container{
+      width: 500PX;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .slide-image {
+    vertical-align: top; 
+    width: 450PX;
+    margin-bottom: 2rem;
+    margin-left: 30px;
+    height: 300px;
+}
+.opinion{
+    font-size: 15px;
+}
+
+.slide-image {
+    width: 280PX;
+    height: 300px;
+}
+
+}

@@ -1,0 +1,125 @@
+.navbar {
+    position: absolute !important;
+    align-self: flex-start;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px; /* Adjust if needed */
+    margin: 0 auto; 
+  }
+  
+
+
+  .sitename {
+    align-items: start;
+    color: white;
+    font-size: 24px;
+    font-family: "Satisfy", sans-serif;
+    flex: 1;
+  }
+
+  .sitecomponents {
+
+  }
+  
+ 
+  
+  .nav-menu {
+    display: flex;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    margin-right: 0;
+    
+  }
+  
+  .nav-item {
+    height: 80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: "Satisfy", sans-serif;
+  }
+  
+  .nav-item:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+    color: #ff7200;
+  }
+
+  .fa-solid {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+     .navbar{
+      height: 25px;
+     }
+
+    .navbar-container {
+      height: 10px;
+      display: flex;
+      flex-direction: row;
+      
+      
+      
+    }
+  
+    .sitename {   
+      font-size: 10px;
+      left: 0;
+      
+      
+    }
+    .sitecomponents {
+      font-size: 10px;
+      margin-left: 0px; 
+      
+    }
+
+    .nav-item {
+      font-size: 8px;
+      padding: 1px;
+      height: 10px;
+    }
+    .nav-menu {
+      right: 0;
+      margin-top : 10px ;
+     
+      
+    }
+
+    .navbar-logo {
+      font-size: 1rem;
+    }
+  
+  }
+
+ 

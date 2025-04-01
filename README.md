@@ -3,14 +3,10 @@ A web platform dedicated to promoting biodiversity conservation and environmenta
 
 # 🔹Tech Stack:
 
-# Frontend: 
-React.js (dynamic & responsive UI)<br/>
-# Backend: 
-NestJS (scalable and efficient API)<br/>
-# Database: 
-PostgreSQL (structured data storage)<br/>
-# Containerization:
-Docker (managing PostgreSQL in a containerized environment)<br/>
+✅ Frontend: React.js (dynamic & responsive UI)<br/>
+✅ Backend: NestJS (scalable and efficient API)<br/>
+✅ Database: PostgreSQL (structured data storage)<br/>
+✅ Containerization: Docker (managing PostgreSQL in a containerized environment)<br/>
 
 # 🔹Features:
 ✅ Informational content about the association and its projects<br/>
